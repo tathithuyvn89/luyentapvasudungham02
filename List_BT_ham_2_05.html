@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nhỏ nhất trong ba số nguyên</title>
+</head>
+<body>
+<script>
+    function findMinNumber(number1,number2,number3) {
+        // if (number1<number2 && number1<number3){
+        //     return number1;
+        // }
+        // if (number2<number1 && number2<number3) {
+        //     return number2;
+        // }if ( number3<number1 && number3<number2){
+        //     return  number3;
+        // }
+       let a = [number1, number2, number3];
+       let min=a[0];
+       for (let i=0; i<a.length; i++){
+           if (min>a[i]){
+               min=a[i];
+           }
+
+       }
+        return min;
+    }
+    console.log(findMinNumber(5,10,5));
+</script>
+</body>
+</html>

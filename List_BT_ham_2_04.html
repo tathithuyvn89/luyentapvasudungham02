@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ký tự nhập vào có phải là số hay không</title>
+</head>
+<body>
+<script>
+
+  function checnkNumber(a) {
+
+  if (Number.isNaN(Number.parseFloat(a))===false){
+      return true;
+  } else {
+      return false;
+  }
+  }
+  let b= prompt("Nhap vao ky tu bat ki");
+  console.log(checnkNumber(b));
+</script>
+</body>
+</html>

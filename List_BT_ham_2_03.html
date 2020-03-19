@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên bất kỳ</title>
+</head>
+<body>
+<script>
+function findFactorial(number) {
+    let a=1;
+for (let i=1; i<=number; i++){
+    a*=i;
+    console.log(a);
+}
+return a;
+}
+let b= Number(prompt("Nhập vào một số nguyên để tính giai thừa: "));
+alert("Giai thừa của "+ b + " là "+ findFactorial(b));
+</script>
+</body>
+</html>

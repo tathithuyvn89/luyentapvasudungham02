@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trùng khớp với mảng </title>
+</head>
+<body>
+<script>
+    function check(array,content) {
+        let count=0;
+        for (let i=0; i<array.length;i++){
+            if (content===array[i]){
+                count++;
+            }
+
+        }
+        if (count===0){
+            count=-1;
+        }
+        return count;
+    }
+    let array1 =['v','g','v','e','7','v','9']
+    let b= "e";
+    console.log(array1[0]);
+    console.log(check(array1,b));
+</script>
+</body>
+</html>

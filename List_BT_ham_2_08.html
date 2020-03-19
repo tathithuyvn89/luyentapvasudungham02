@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược vị trí trong một mảng</title>
+</head>
+<body>
+<script>
+    function reversePosition(array) {
+       let fist=0;
+        let last=array.length-1;
+        while (fist<last){
+          let b= array[fist];
+          array[fist]=array[last];
+          array[last]=b;
+          fist++;
+          last--;
+        }
+        return array;
+        }
+    let array1= [5,4,6,7,0];
+    console.log(reversePosition(array1));
+</script>
+</body>
+</html>

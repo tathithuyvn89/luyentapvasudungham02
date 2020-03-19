@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chu vi và diện tích của hình tròn</title>
+</head>
+<body>
+<script>
+    function tinhDienTich(bankinh) {
+        dientich= bankinh*bankinh*3.14;
+        return dientich;
+    }
+    function tinhChuVi(bankinh) {
+        chuvi= 2*bankinh*3.14;
+        return chuvi;
+    }
+    let a= Number(prompt("Nhập bán kính của hình tròn: "));
+    alert(" Diện tích của hình tròn có bán kính " + a +" là " + tinhDienTich(a));
+    alert(" Chu vi của hình tròn có bán kính " + a +" là " +tinhChuVi(a));
+
+</script>
+</body>
+</html>
